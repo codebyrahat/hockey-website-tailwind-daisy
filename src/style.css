@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-dark: #131318;
+  --color-dark-light: #13131899;
+  --color-red-light: #ff4240;
+  --spacing-34: 136px;
+}
+
+@layer base {
+  body {
+    font-family: "Manrope", sans-serif;
+  }
+  h1 {
+    @apply text-dark text-4xl font-extrabold tracking-wider;
+  }
+}
+
+@layer components {
+}
+
+/* Margin for body */
+@utility responsive-margin {
+  @apply mx-5 sm:mx-10 md:mx-20 lg:mx-34;
+}
